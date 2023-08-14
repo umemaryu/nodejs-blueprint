@@ -1,0 +1,10 @@
+node_modules
+.env
+.env-btp
+ocr-credentials-btp.json
+ocr-credentials-ryutaro.json
+secrets.yaml
+secrets-ryutaro.yaml
+secrets-btp.yaml
+yarn.lock
+dist

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "~/config/*": ["./src/config/*"],
+      "~/di/*": ["./src/di/*"],
+      "~/server-config/*": ["src/server-config/*"],
+      "~/type/*": ["./src/type/*"],
+      "~/utils/*": ["./src/utils/*"],
+      "~/gpt4/*": ["./src/platform/gpt4/*"],
+      "~/ocr/*": ["./src/platform/ocr/*"],
+      "~/s4/*": ["./src/platform/s4/*.ts"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      },
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true
+      }
+    ]
+  },
+  "lib": ["es2015"]
+}
